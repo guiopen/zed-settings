@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "base_keymap": "VSCode",
+  "format_on_save": "off",
   "autosave": { "after_delay": { "milliseconds": 1000 } },
   "tabs": { "git_status": true, "file_icons": true },
   "project_panel": { "hide_root": true },
