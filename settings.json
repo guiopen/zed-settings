@@ -52,25 +52,47 @@
     "edit_prediction_provider": "copilot"
   },
 
+  "language_models": {
+    "openai_compatible": {
+      "Qwen": {
+        "api_url": "https://portal.qwen.ai/v1",
+        "available_models": [
+          {
+            "name": "qwen3-coder-plus",
+            "max_tokens": 1000000,
+            "max_output_tokens": 65536,
+            "max_completion_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  },
+
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "model_parameters": [{ "temperature": 0.0 }],
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "provider": "Qwen",
+      "model": "qwen3-coder-plus"
     },
     "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "Qwen",
+      "model": "qwen3-coder-plus"
     },
     "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "Qwen",
+      "model": "qwen3-coder-plus"
     },
     "thread_summary_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "Qwen",
+      "model": "qwen3-coder-plus"
     }
   }
 }
