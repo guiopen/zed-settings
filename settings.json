@@ -79,23 +79,23 @@
 
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "ask",
+    "default_profile": "minimal",
     "model_parameters": [{ "temperature": 0.0 }],
     "default_model": {
-      "provider": "Qwen",
-      "model": "qwen3-coder-plus"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
     "inline_assistant_model": {
-      "provider": "Qwen",
-      "model": "qwen3-coder-plus"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
     "commit_message_model": {
-      "provider": "Qwen",
-      "model": "qwen3-coder-plus"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
     "thread_summary_model": {
-      "provider": "Qwen",
-      "model": "qwen3-coder-plus"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     }
   }
 }
