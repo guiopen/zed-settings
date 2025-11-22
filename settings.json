@@ -27,8 +27,8 @@
 
   "theme": {
     "mode": "dark",
-    "light": "Zedokai Light (Filter Sun)",
-    "dark": "Zedokai (Filter Spectrum)"
+    "dark": "Zedokai (Filter Spectrum)",
+    "light": "Zedokai Light (Filter Sun)"
   },
   "icon_theme": "Material Icon Theme",
   "ui_font_family": "Inter",
