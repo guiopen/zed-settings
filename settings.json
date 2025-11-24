@@ -9,6 +9,7 @@
 {
   "base_keymap": "VSCode",
   "soft_wrap": "editor_width",
+  "sticky_scroll": {"enabled": true},
   "format_on_save": "off",
   "ensure_final_newline_on_save": false,
   "remove_trailing_whitespace_on_save": false,
@@ -50,31 +51,9 @@
     "git-firefly": true
   },
 
-  "show_edit_predictions": true,
+  "show_edit_predictions": false,
   "features": {
     "edit_prediction_provider": "copilot"
-  },
-
-  "language_models": {
-    "openai_compatible": {
-      "Qwen": {
-        "api_url": "https://portal.qwen.ai/v1",
-        "available_models": [
-          {
-            "name": "qwen3-coder-plus",
-            "max_tokens": 1000000,
-            "max_output_tokens": 65536,
-            "max_completion_tokens": 1000000,
-            "capabilities": {
-              "tools": true,
-              "images": false,
-              "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
-          }
-        ]
-      }
-    }
   },
 
   "agent": {
