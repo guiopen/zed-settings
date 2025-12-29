@@ -9,7 +9,7 @@
 {
   "base_keymap": "VSCode",
   //"soft_wrap": "editor_width",
-  "sticky_scroll": {"enabled": true},
+  "sticky_scroll": { "enabled": true },
   "format_on_save": "off",
   "ensure_final_newline_on_save": false,
   "remove_trailing_whitespace_on_save": false,
@@ -21,22 +21,22 @@
   "lsp": {
     "gopls": {
       "initialization_options": {
-        "ui.completion.usePlaceholders": false
-      }
-    }
+        "ui.completion.usePlaceholders": false,
+      },
+    },
   },
 
   "theme": {
     "mode": "dark",
     "dark": "Zedokai (Filter Spectrum)",
-    "light": "Zedokai Light (Filter Sun)"
+    "light": "Zedokai Light (Filter Sun)",
   },
   "icon_theme": "Material Icon Theme",
   "ui_font_family": "Inter",
   "buffer_font_family": "JetBrains Mono",
-  "ui_font_size": 14.0,
-  "buffer_font_size": 14.0,
-  "agent_ui_font_size": 15.0,
+  "ui_font_size": 15.0,
+  "buffer_font_size": 15.0,
+  "agent_ui_font_size": 16.0,
   "agent_buffer_font_size": 14.0,
   "ui_font_weight": 500.0,
   "buffer_font_weight": 400.0,
@@ -49,33 +49,54 @@
     "html": true,
     "java": true,
     "svelte": true,
-    "git-firefly": true
+    "git-firefly": true,
   },
 
   "show_edit_predictions": false,
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
+  },
+
+  "language_models": {
+    "openai_compatible": {
+      "llama.cpp": {
+        "api_url": "http://127.0.0.1:8080/v1",
+        "available_models": [
+          {
+            "name": "gpt-oss",
+            "max_tokens": 64000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 64000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+    },
   },
 
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "ask",
-    "model_parameters": [{ "temperature": 0.0 }],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "oswe-vscode-prime"
+      "model": "oswe-vscode-prime",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "oswe-vscode-prime"
+      "model": "oswe-vscode-prime",
     },
     "commit_message_model": {
       "provider": "copilot_chat",
-      "model": "oswe-vscode-prime"
+      "model": "oswe-vscode-prime",
     },
     "thread_summary_model": {
       "provider": "copilot_chat",
-      "model": "oswe-vscode-prime"
-    }
-  }
+      "model": "oswe-vscode-prime",
+    },
+  },
 }
