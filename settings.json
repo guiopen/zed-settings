@@ -82,8 +82,8 @@
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
-      "provider": "llama.cpp",
-      "model": "local model",
+      "provider": "copilot_chat",
+      "model": "oswe-vscode-prime",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
