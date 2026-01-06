@@ -64,10 +64,8 @@
         "api_url": "http://127.0.0.1:8080/v1",
         "available_models": [
           {
-            "name": "gpt-oss",
-            "max_tokens": 64000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 64000,
+            "name": "local model",
+            "max_tokens": 32000,
             "capabilities": {
               "tools": true,
               "images": false,
@@ -84,8 +82,8 @@
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "oswe-vscode-prime",
+      "provider": "llama.cpp",
+      "model": "local model",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
