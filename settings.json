@@ -67,8 +67,6 @@
           {
             "name": "local model",
             "max_tokens": 32000,
-            "max_output_tokens": 16000,
-            "max_completion_tokens": 32000,
             "capabilities": {
               "tools": true,
               "images": false,
