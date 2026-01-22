@@ -22,8 +22,8 @@
 
   "lsp": {
     "gopls": {
-      "initialization_options": {
-        "ui.completion.usePlaceholders": false,
+      "settings": {
+        "usePlaceholders": false,
       },
     },
   },
@@ -54,7 +54,7 @@
     "git-firefly": true,
   },
 
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "features": {
     "edit_prediction_provider": "copilot",
   },
@@ -67,11 +67,13 @@
           {
             "name": "local model",
             "max_tokens": 32000,
+            "max_output_tokens": 16000,
+            "max_completion_tokens": 32000,
             "capabilities": {
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": false,
+              "prompt_cache_key": true,
             },
           },
         ],
@@ -80,6 +82,16 @@
   },
 
   "agent": {
+    "favorite_models": [
+      {
+        "provider": "llama.cpp",
+        "model": "local model",
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "oswe-vscode-prime",
+      },
+    ],
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
