@@ -113,8 +113,8 @@
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "oswe-vscode-prime",
+      "provider": "llama.cpp",
+      "model": "local model",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
@@ -126,7 +126,7 @@
     },
     "thread_summary_model": {
       "provider": "copilot_chat",
-      "model": "oswe-vscode-prime",
+      "model": "gpt-4.1",
     },
   },
 }
