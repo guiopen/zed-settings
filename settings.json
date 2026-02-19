@@ -67,7 +67,7 @@
         "available_models": [
           {
             "name": "local model",
-            "max_tokens": 32000,
+            "max_tokens": 64000,
             "capabilities": {
               "tools": true,
               "images": false,
