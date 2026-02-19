@@ -101,14 +101,6 @@
         "provider": "llama.cpp",
         "model": "local model",
       },
-      {
-        "provider": "copilot_chat",
-        "model": "oswe-vscode-prime",
-      },
-      {
-        "provider": "copilot_chat",
-        "model": "gemini-3-pro-preview",
-      },
     ],
     "default_profile": "ask",
     "default_model": {
