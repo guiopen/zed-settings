@@ -77,21 +77,6 @@
           },
         ],
       },
-      "Qwen Code": {
-        "api_url": "https://portal.qwen.ai/v1",
-        "available_models": [
-          {
-            "name": "coder-model",
-            "max_tokens": 1000000,
-            "capabilities": {
-              "tools": true,
-              "images": false,
-              "parallel_tool_calls": true,
-              "prompt_cache_key": true,
-            },
-          },
-        ],
-      },
     },
   },
 
