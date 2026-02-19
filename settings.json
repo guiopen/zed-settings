@@ -71,7 +71,7 @@
             "capabilities": {
               "tools": true,
               "images": false,
-              "parallel_tool_calls": false,
+              "parallel_tool_calls": true,
               "prompt_cache_key": true,
             },
           },
@@ -86,8 +86,8 @@
             "capabilities": {
               "tools": true,
               "images": false,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
             },
           },
         ],
@@ -110,7 +110,6 @@
         "model": "gemini-3-pro-preview",
       },
     ],
-    "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
       "provider": "llama.cpp",
