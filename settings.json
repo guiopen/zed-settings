@@ -103,23 +103,23 @@
             },
           },
           {
-            "name": "MiniMax-M2.5",
-            "display_name": "MiniMax-M2.5",
-            "max_tokens": 200000,
-            "capabilities": {
-              "tools": true,
-              "images": false,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
-            },
-          },
-          {
             "name": "kimi-k2.5",
             "display_name": "Kimi K2.5",
             "max_tokens": 256000,
             "capabilities": {
               "tools": true,
               "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+          {
+            "name": "MiniMax-M2.5",
+            "display_name": "MiniMax-M2.5",
+            "max_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
               "parallel_tool_calls": false,
               "prompt_cache_key": false,
             },
@@ -141,12 +141,18 @@
       {
         "provider": "llama.cpp",
         "model": "Local Model",
+        "enable_thinking": false,
+      },
+      {
+        "provider": "Alibaba Coding Plan",
+        "model": "qwen3.5-plus",
+        "enable_thinking": false,
       },
     ],
     "default_profile": "ask",
     "default_model": {
-      "provider": "llama.cpp",
-      "model": "Local Model",
+      "provider": "Alibaba Coding Plan",
+      "model": "glm-5",
     },
     "inline_assistant_model": {
       "provider": "llama.cpp",
