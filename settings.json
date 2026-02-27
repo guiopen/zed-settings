@@ -66,7 +66,7 @@
         "api_url": "http://127.0.0.1:8080/v1",
         "available_models": [
           {
-            "name": "local model",
+            "name": "Local Model",
             "max_tokens": 64000,
             "capabilities": {
               "tools": true,
@@ -77,24 +77,84 @@
           },
         ],
       },
+      "Alibaba Coding Plan": {
+        "api_url": "https://coding-intl.dashscope.aliyuncs.com/v1",
+        "available_models": [
+          {
+            "name": "qwen3.5-plus",
+            "display_name": "Qwen3.5 Plus",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+          {
+            "name": "glm-5",
+            "display_name": "GLM-5",
+            "max_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+          {
+            "name": "MiniMax-M2.5",
+            "display_name": "MiniMax-M2.5",
+            "max_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+          {
+            "name": "kimi-k2.5",
+            "display_name": "Kimi K2.5",
+            "max_tokens": 256000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+        ],
+      },
     },
   },
 
   "agent": {
+    "model_parameters": [
+      {
+        "provider": "Alibaba Coding Plan",
+        "model": "qwen3.5-plus",
+        "temperature": 0.6,
+      },
+    ],
     "favorite_models": [
       {
         "provider": "llama.cpp",
-        "model": "local model",
+        "model": "Local Model",
+      },
+      {
+        "provider": "openrouter",
+        "model": "openrouter/free",
       },
     ],
-    "default_profile": "ask",
+    "default_profile": "minimal",
     "default_model": {
       "provider": "llama.cpp",
-      "model": "local model",
+      "model": "Local Model",
     },
     "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1",
+      "provider": "llama.cpp",
+      "model": "Local Model",
     },
     "commit_message_model": {
       "provider": "copilot_chat",
@@ -103,6 +163,17 @@
     "thread_summary_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1",
+    },
+  },
+  "agent_servers": {
+    "opencode": {
+      "favorite_models": [
+        "bailian-coding-plan/qwen3.5-plus",
+        "bailian-coding-plan/kimi-k2.5",
+        "bailian-coding-plan/glm-5",
+        "bailian-coding-plan/MiniMax-M2.5",
+      ],
+      "type": "registry",
     },
   },
 }
