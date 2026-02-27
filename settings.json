@@ -142,12 +142,8 @@
         "provider": "llama.cpp",
         "model": "Local Model",
       },
-      {
-        "provider": "openrouter",
-        "model": "openrouter/free",
-      },
     ],
-    "default_profile": "minimal",
+    "default_profile": "ask",
     "default_model": {
       "provider": "llama.cpp",
       "model": "Local Model",
