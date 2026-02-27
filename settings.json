@@ -136,23 +136,27 @@
         "model": "qwen3.5-plus",
         "temperature": 0.6,
       },
+      {
+        "provider": "Alibaba Coding Plan",
+        "model": "glm-5",
+        "temperature": 0.7,
+      },
+      {
+        "provider": "Alibaba Coding Plan",
+        "model": "kimi-k2.5",
+        "temperature": 0.6,
+      },
     ],
     "favorite_models": [
       {
         "provider": "llama.cpp",
         "model": "Local Model",
-        "enable_thinking": false,
-      },
-      {
-        "provider": "Alibaba Coding Plan",
-        "model": "qwen3.5-plus",
-        "enable_thinking": false,
       },
     ],
     "default_profile": "ask",
     "default_model": {
-      "provider": "Alibaba Coding Plan",
-      "model": "glm-5",
+      "provider": "llama.cpp",
+      "model": "Local Model",
     },
     "inline_assistant_model": {
       "provider": "llama.cpp",
@@ -165,17 +169,6 @@
     "thread_summary_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1",
-    },
-  },
-  "agent_servers": {
-    "opencode": {
-      "favorite_models": [
-        "bailian-coding-plan/qwen3.5-plus",
-        "bailian-coding-plan/kimi-k2.5",
-        "bailian-coding-plan/glm-5",
-        "bailian-coding-plan/MiniMax-M2.5",
-      ],
-      "type": "registry",
     },
   },
 }
