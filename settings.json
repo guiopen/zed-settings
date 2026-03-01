@@ -163,7 +163,6 @@
       {
         "provider": "llama.cpp",
         "model": "Local Model",
-        "enable_thinking": false,
       },
     ],
   },
