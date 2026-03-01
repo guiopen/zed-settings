@@ -103,6 +103,17 @@
             },
           },
           {
+            "name": "qwen3-coder-plus",
+            "display_name": "Qwen3 Coder Plus",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": true,
+            },
+          },
+          {
             "name": "kimi-k2.5",
             "display_name": "Kimi K2.5",
             "max_tokens": 256000,
@@ -130,23 +141,7 @@
   },
 
   "agent": {
-    "model_parameters": [
-      {
-        "provider": "Alibaba Coding Plan",
-        "model": "qwen3.5-plus",
-        "temperature": 0.6,
-      },
-      {
-        "provider": "Alibaba Coding Plan",
-        "model": "glm-5",
-        "temperature": 0.7,
-      },
-      {
-        "provider": "Alibaba Coding Plan",
-        "model": "kimi-k2.5",
-        "temperature": 0.6,
-      },
-    ],
+    "model_parameters": [{ "temperature": 0.6 }],
     "default_profile": "ask",
     "default_model": {
       "provider": "llama.cpp",
@@ -157,17 +152,18 @@
       "model": "Local Model",
     },
     "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1",
+      "provider": "llama.cpp",
+      "model": "Local Model",
     },
     "thread_summary_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1",
+      "provider": "llama.cpp",
+      "model": "Local Model",
     },
     "favorite_models": [
       {
         "provider": "llama.cpp",
         "model": "Local Model",
+        "enable_thinking": false,
       },
     ],
   },
