@@ -23,15 +23,15 @@
   "lsp": {
     "gopls": {
       "settings": {
-        "usePlaceholders": false,
-      },
-    },
+        "usePlaceholders": false
+      }
+    }
   },
 
   "theme": {
     "mode": "dark",
     "dark": "Zedokai (Filter Spectrum)",
-    "light": "Zedokai Light (Filter Sun)",
+    "light": "Zedokai Light (Filter Sun)"
   },
   "icon_theme": "Material Icon Theme",
   "ui_font_family": "Inter",
@@ -51,13 +51,13 @@
     "html": true,
     "java": true,
     "svelte": true,
-    "git-firefly": true,
+    "git-firefly": true
   },
 
   "disable_ai": false,
   "show_edit_predictions": false,
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "copilot"
   },
 
   "language_models": {
@@ -72,10 +72,10 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
-          },
-        ],
+              "prompt_cache_key": true
+            }
+          }
+        ]
       },
       "Alibaba Coding Plan": {
         "api_url": "https://coding-intl.dashscope.aliyuncs.com/v1",
@@ -88,8 +88,8 @@
               "tools": true,
               "images": true,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
+              "prompt_cache_key": true
+            }
           },
           {
             "name": "glm-5",
@@ -99,8 +99,8 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
+              "prompt_cache_key": true
+            }
           },
           {
             "name": "qwen3-coder-plus",
@@ -110,8 +110,8 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
+              "prompt_cache_key": true
+            }
           },
           {
             "name": "kimi-k2.5",
@@ -121,8 +121,8 @@
               "tools": true,
               "images": true,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
+              "prompt_cache_key": true
+            }
           },
           {
             "name": "MiniMax-M2.5",
@@ -132,12 +132,12 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": true,
-            },
-          },
-        ],
-      },
-    },
+              "prompt_cache_key": true
+            }
+          }
+        ]
+      }
+    }
   },
 
   "agent": {
@@ -145,25 +145,25 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "llama.cpp",
-      "model": "Local Model",
+      "model": "Local Model"
     },
     "inline_assistant_model": {
       "provider": "llama.cpp",
-      "model": "Local Model",
+      "model": "Local Model"
     },
     "commit_message_model": {
       "provider": "llama.cpp",
-      "model": "Local Model",
+      "model": "Local Model"
     },
     "thread_summary_model": {
       "provider": "llama.cpp",
-      "model": "Local Model",
+      "model": "Local Model"
     },
     "favorite_models": [
       {
         "provider": "llama.cpp",
-        "model": "Local Model",
-      },
+        "model": "Local Model"
+      }
     ],
     "profiles": {
       "write": {
@@ -188,10 +188,10 @@
           "subagent": true,
           "terminal": true,
           "thinking": true,
-          "web_search": true,
+          "web_search": true
         },
         "enable_all_context_servers": true,
-        "context_servers": {},
+        "context_servers": {}
       },
       "ask": {
         "name": "Ask",
@@ -207,10 +207,10 @@
           "grep": true,
           "subagent": true,
           "thinking": true,
-          "web_search": true,
+          "web_search": true
         },
         "enable_all_context_servers": false,
-        "context_servers": {},
+        "context_servers": {}
       },
       "code-review": {
         "name": "Code Review",
@@ -227,11 +227,11 @@
           "grep": true,
           "subagent": true,
           "thinking": true,
-          "web_search": true,
+          "web_search": true
         },
         "enable_all_context_servers": false,
-        "context_servers": {},
-      },
-    },
-  },
+        "context_servers": {}
+      }
+    }
+  }
 }
