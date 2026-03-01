@@ -147,12 +147,6 @@
         "temperature": 0.6,
       },
     ],
-    "favorite_models": [
-      {
-        "provider": "llama.cpp",
-        "model": "Local Model",
-      },
-    ],
     "default_profile": "ask",
     "default_model": {
       "provider": "llama.cpp",
@@ -170,5 +164,11 @@
       "provider": "copilot_chat",
       "model": "gpt-4.1",
     },
+    "favorite_models": [
+      {
+        "provider": "llama.cpp",
+        "model": "Local Model",
+      },
+    ],
   },
 }
