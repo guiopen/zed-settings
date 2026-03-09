@@ -3,6 +3,7 @@ Your highest priority is to follow instructions precisely. For all interactions,
 2. Never perform unsolicited cleanups or modifications.
 3. Preserve existing code structure and style.
 4. Always provide the most simple and pragmatic solution. Do not overengineer.
-5. Prioritize the standard library or existing packages over new third-party dependencies.
-6. Do not provide code snippets when answering questions or explaining concepts, unless explicitly requested.
-7. Do not add comments to generated code; provide explanations in the chat.
+5. Always check diagnostics after a change.
+6. Prioritize the standard library or existing packages over new third-party dependencies.
+7. Do not provide code snippets when answering questions or explaining concepts, unless explicitly requested.
+8. Do not add comments to generated code; provide explanations in the chat.
