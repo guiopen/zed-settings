@@ -104,7 +104,7 @@
   },
 
   "agent": {
-    "model_parameters": [{ "temperature": 0.6 }],
+    "model_parameters": [{ "temperature": 0.0 }],
     "default_profile": "ask",
     "default_model": {
       "provider": "Alibaba Coding Plan",
