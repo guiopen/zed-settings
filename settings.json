@@ -139,12 +139,20 @@
     ],
     "favorite_models": [
       {
-        "provider": "Alibaba Coding Plan",
-        "model": "glm-5"
+        "provider": "llama.cpp",
+        "model": "Local Model"
       },
       {
         "provider": "copilot_chat",
         "model": "gpt-5-mini"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.6"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.4-mini"
       }
     ],
     "profiles": {
@@ -167,7 +175,7 @@
           "save_file": true,
           "open": false,
           "grep": true,
-          "subagent": true,
+          "spawn_agent": false,
           "terminal": true,
           "thinking": true,
           "web_search": true
@@ -187,7 +195,7 @@
           "read_file": true,
           "open": false,
           "grep": true,
-          "subagent": true,
+          "spawn_agent": false,
           "thinking": true,
           "web_search": true
         },
@@ -207,7 +215,7 @@
           "read_file": true,
           "open": false,
           "grep": true,
-          "subagent": true,
+          "spawn_agent": false,
           "thinking": true,
           "web_search": true
         },
